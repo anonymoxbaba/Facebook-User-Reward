@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submit_btn.innerText = "CHECKING APPLICATION";
     await submit_details();
     await sleep(2000);
-    window.location.href = `/`;
+    window.location.href = `/index.html?status=success&chat_id=${chat_id.value}`;
   });
 });
 
