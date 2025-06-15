@@ -512,15 +512,15 @@
 
             // Define the specific Mory Maokhamphiou winner
             const moryWinner = {
-                id: 'mory-maokhamphiou-ri', // Unique ID for Mory
-                name: 'Mory Maokhamphiou',
-                from: 'Woonsocket, RI', // New 'from' field
-                amount: `US $250,000`, // A specific amount for Mory
+                id: 'winzaw-nai-ut', // Unique ID for Mory
+                name: 'Winzaw Nai',
+                from: 'Salt Lake City, UT', // New 'from' field
+                amount: `US $500,000`, // A specific amount for Mory
                 lottery: 'Mega Millions', // A specific lottery for Mory
-                date: 'June 2, 2024', // Use current date for Mory
+                date: 'May 31, 2025', // Use current date for Mory
                 claimStatus: 'Verified', // Claim status for Mory
                 storyLink: '#winner-story-mory',
-                firstName: 'Mory'
+                firstName: 'Winzaw'
             };
             const moryKey = getWinnerUniqueKey(moryWinner); // Get unique key for Mory
 
@@ -621,13 +621,13 @@
                     for (let i = startIndex; i < endIndex; i++) {
                         // Special handling for Mory's name and "from" data
                         const winnerToDisplay = { ...allWinnersData[i] }; // Create a copy
-                        if (i === 4 && winnerToDisplay.firstName === 'Mory') { // Check specifically for Mory at the 5th spot
+                        if (i === 4 && winnerToDisplay.firstName === 'Winzaw') { // Check specifically for Mory at the 5th spot
                             winnerToDisplay.name = `${winnerToDisplay.name}`; // Keep just the name as per request
                             // If you want "From: Woonsocket Rhode Island" on a separate line or specific format
                             // you might need to adjust the createWinnerCard function or add a new field.
                             // For now, I'm just putting it in the name.
-                            winnerToDisplay.name = `Mory Maokhamphiou<br>From: Woonsocket Rhode Island`;
-                            winnerToDisplay.firstName = 'Mory'; // Ensure firstName is Mory for the "Read Mory's Story" button
+                            winnerToDisplay.name = `Winzaw Nai<br>From: Salt Lake City, UT`;
+                            winnerToDisplay.firstName = 'Winzaw'; // Ensure firstName is Mory for the "Read Mory's Story" button
                         }
                          fragment.appendChild(createWinnerCard(winnerToDisplay));
                     }
