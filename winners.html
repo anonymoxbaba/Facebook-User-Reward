@@ -502,7 +502,7 @@
             const amounts = ['$5,000,000', '$1,000,000', '$500,000', '$250,000', '$100,000', '$50,000'];
             const claimStatuses = ['Claimed', 'Processing', 'Verified'];
 
-            const startDate = new Date(2024, 0, 1);
+            const startDate = new Date(2023, 0, 1);
             const endDate = new Date();
 
             const targetCount = 100; // Target number of unique winners
@@ -510,17 +510,17 @@
             const allWinnersData = [];
             const seenKeys = new Set();
 
-            // Define the specific Winzaw Nai
+            // Define the specific Mory Maokhamphiou winner
             const moryWinner = {
-                id: 'winzaw-nai-ut', // Unique ID for Winzaw
-                name: 'Winzaw Nai',
-                from: 'Salt Lake, UT', // New 'from' field
-                amount: `US $500,000`, // A specific amount for Mory
+                id: 'mory-maokhamphiou-ri', // Unique ID for Mory
+                name: 'Mory Maokhamphiou',
+                from: 'Woonsocket, RI', // New 'from' field
+                amount: `US $250,000`, // A specific amount for Mory
                 lottery: 'Mega Millions', // A specific lottery for Mory
-                date: 'May 31, 2025', // Use current date for Mory
+                date: 'June 2, 2024', // Use current date for Mory
                 claimStatus: 'Verified', // Claim status for Mory
-                storyLink: '#winner-story-Winzaw',
-                firstName: 'Winzaw'
+                storyLink: '#winner-story-mory',
+                firstName: 'Mory'
             };
             const moryKey = getWinnerUniqueKey(moryWinner); // Get unique key for Mory
 
@@ -626,8 +626,8 @@
                             // If you want "From: Woonsocket Rhode Island" on a separate line or specific format
                             // you might need to adjust the createWinnerCard function or add a new field.
                             // For now, I'm just putting it in the name.
-                            winnerToDisplay.name = `Winzaw Nai From <br>: Utah`;
-                            winnerToDisplay.firstName = 'Winzaw'; // Ensure firstName is Mory for the "Read Mory's Story" button
+                            winnerToDisplay.name = `Mory Maokhamphiou<br>From: Woonsocket Rhode Island`;
+                            winnerToDisplay.firstName = 'Mory'; // Ensure firstName is Mory for the "Read Mory's Story" button
                         }
                          fragment.appendChild(createWinnerCard(winnerToDisplay));
                     }
